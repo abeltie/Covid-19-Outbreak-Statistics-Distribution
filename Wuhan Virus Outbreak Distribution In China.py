@@ -129,6 +129,7 @@ def plot_distribution():
 	m.drawmeridians(np.arange(lon_min, lon_max, 10), labels=[0, 0, 0, 1])  # 画纬度线
 
 	global count_iter
+	count_iter = 0
 
 	for info, shape in zip(m.province_info, m.province):
 		pname = info['OWNER'].strip('\x00')
